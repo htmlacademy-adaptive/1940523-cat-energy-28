@@ -7,7 +7,7 @@
   <body>
   <header class="main-header">
     <div class="main-header__logo logo">
-      <a class="logo__wrapper">
+      <a class="logo__wrapper" href="/">
         <img class="logo__image" src="img/logo.svg" width="34" height="37" alt="Котик.">
         <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
       </a>
@@ -19,17 +19,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a>
+            <a href="/">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="form.html">
               Подбор программы
             </a>
           </li>
@@ -42,38 +42,38 @@
     <section class="form">
       <h2 class="form__title">Заполните анкету, и мы подберем
         программу питания для вашего кота</h2>
-      <form action="/options" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__group">
           <label class="form__field form-field">
             <span class="form-field__label">ИМЯ:*</span>
-            <input class="form-field__control form-control input" type="text" id="name" placeholder="барсик">
+            <input class="form-field__control" type="text" id="name" placeholder="барсик">
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Вес (кг):*</span>
-            <input class="form-field__control form-control input" type="text" id="weight" placeholder="7">
+            <input class="form-field__control" type="text" id="weight" placeholder="7">
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Возраст (лет):</span>
-            <input class="form-field__control form-control input" type="text" id="age" placeholder="7">
+            <input class="form-field__control" type="text" id="age" placeholder="7">
           </label>
         </div>
         <div class="form__group form-group">
           <ul class="form-group__list">
             <li class="form-group__item">
               <label class="form__field form-field">
-                <input class="form-field__control form-control input" type="radio" name="program-type" value="slim" checked>
+                <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="slim" checked>
                 <span class="form-field__label">похудение</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
-                <input class="form-field__control form-control input" type="radio" name="program-type" value="pro">
+                <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="pro">
                 <span class="form-field__label">Набор массы</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
-                <input class="form-field__control form-control input" type="radio" name="program-type" value="help">
+                <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="help">
                 <span class="form-field__label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
@@ -83,17 +83,17 @@
           <span class="form__group-title">Контактные данные (владельца кота)</span>
           <label class="form__field form-field">
             <span class="form-field__label">E-mail:*</span>
-            <input class="form-field__control form-control input" type="email" id="email" placeholder="kuklachev@gmail.com">
+            <input class="form-field__control" type="email" id="email" placeholder="kuklachev@gmail.com">
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Телефон:*</span>
-            <input class="form-field__control form-control input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <input class="form-field__control" type="tel" id="phone" placeholder="8 (960) 900-60-90">
           </label>
         </div>
         <div class="form__group form__group--comment">
           <label class="form__field form-field">
             <span class="form-field__label">Комментарий</span>
-            <textarea class="form-field__control form-control textarea" id="form-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="form-field__control form-field__control--textarea" id="form-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </div>
         <div class="form__group form__group--additional">
@@ -101,23 +101,23 @@
           <ul class="form__group-list">
             <li class="form__group-item item">
               <label class="item__control">
-                <input class="visually-hidden item__control-input" type="checkbox" name="additional" value="sweetener" checked>
+                <input class="visually-hidden item__control" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="item__control-mark"></span>
                 <span class="item__control-label">сахарозаменитель</span>
               </label>
             </li>
-            <li class="hotels-filter-item">
-              <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="additional" value="water">
-                <span class="control-mark"></span>
-                <span class="control-label">питьевая вода</span>
+            <li class="hotels-filter-item item">
+              <label class="item__control">
+                <input class="visually-hidden item__control" type="checkbox" name="additional" value="water">
+                <span class="item__control-mark"></span>
+                <span class="item__control-label">питьевая вода</span>
               </label>
             </li>
-            <li class="hotels-filter-item">
-              <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="additional" value="milk">
-                <span class="control-mark"></span>
-                <span class="control-label">молоко</span>
+            <li class="hotels-filter-item item">
+              <label class="item__control">
+                <input class="visually-hidden item__control" type="checkbox" name="additional" value="milk">
+                <span class="item__control-mark"></span>
+                <span class="item__control-label">молоко</span>
               </label>
             </li>
             <li class="hotels-filter-item">
@@ -142,12 +142,12 @@
   </main>
   <footer class="footer">
     <aside class="dealer">
-      <div class="dealer__title">
+      <p class="dealer__title">
         приглашаем к сотрудничеству дилеров!
-      </div>
-      <div class="dealer__address">
+      </p>
+      <p class="dealer__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </div>
+      </p>
     </aside>
     <section class="map">
       <h2 class="visually-hidden">Мы на карте</h2>
@@ -156,9 +156,9 @@
       </div>
     </section>
     <div class="footer__wrapper">
-      <div class="footer__logo logo">
+      <a class="footer__logo logo" href="/">
         <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
-      </div>
+      </a>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -173,8 +173,9 @@
         </ul>
       </div>
       <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <img class="copyright__logo" src="img/logo-academy.svg" width="27" height="34" alt="Котик.">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img class="copyright__logo" src="img/logo-academy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+        </a>
       </div>
     </div>
   </footer>
