@@ -1,6 +1,6 @@
 .about {
   margin-top: 20px;
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 
 .about__list {
@@ -27,9 +27,11 @@
   &--powder {
     background-image: url("../../img/icons/icon-powder.svg");
   }
+
   &--eat {
     background-image: url("../../img/icons/icon-eat.svg");
   }
+
   &--time {
     background-image: url("../../img/icons/icon-time.svg");
   }
