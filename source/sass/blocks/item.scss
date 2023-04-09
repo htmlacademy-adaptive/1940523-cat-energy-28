@@ -1,0 +1,26 @@
+.item {
+  padding-top: 13px;
+}
+
+.item__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $additional-text-color;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.item__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-text-color;
+  text-align: start;
+}
+
+.additional__button {
+  margin-top: 15px;
+}

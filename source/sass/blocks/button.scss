@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-color;
+  text-decoration: none;
+  background-color: $accent-color;
+  border: none;
+
+  &--additional {
+    color: $special-text-color;
+    background-color: $basic-grey-color;
+  }
+}

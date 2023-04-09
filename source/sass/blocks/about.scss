@@ -1,0 +1,42 @@
+.about {
+  margin-top: 20px;
+  padding-bottom: 50px
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+}
+
+.about__icon {
+  margin: 0 20px 0 0;
+  width: 60px;
+  height: 60px;
+  background-color: $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--leaf {
+    background-image: url("../../img/icons/icon-leaf.svg");
+  }
+
+  &--powder {
+    background-image: url("../../img/icons/icon-powder.svg");
+  }
+  &--eat {
+    background-image: url("../../img/icons/icon-eat.svg");
+  }
+  &--time {
+    background-image: url("../../img/icons/icon-time.svg");
+  }
+}
+
+.about__description {
+  color: $special-text-color;
+}
+
+

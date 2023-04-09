@@ -1,0 +1,48 @@
+.form {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.form__title {
+  margin-top: 27px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.form__subtitle {
+  margin-top: 37px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 24px;
+  color: $special-text-color;
+
+  &--radio {
+    padding-bottom: 19px;
+    color: $additional-text-color;
+  }
+}
+
+.form__group-title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+  color: $standard-text-color;
+}
+
+.form__group-list {
+  @include list-reset;
+  text-align: start;
+}
+
+.form__legend {
+  margin: 0;
+  padding-top: 21px;
+  text-transform: none;
+}

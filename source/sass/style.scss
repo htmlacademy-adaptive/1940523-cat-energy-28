@@ -1,1 +1,38 @@
-// Начните писать стили здесь
+//базовые стили и переменные
+@import "./variables.scss";
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+
+//миксины
+@import "./mixins.scss";
+
+
+//стили блоков
+@import "./blocks/page";
+@import "./blocks/container";
+@import "./blocks/main-header";
+@import "./blocks/choose-program";
+@import "./blocks/main-nav";
+@import "./blocks/logo";
+@import "./blocks/site-list";
+@import "./blocks/main-container";
+@import "./blocks/program";
+@import "./blocks/program-list";
+@import "./blocks/about";
+@import "./blocks/results";
+@import "./blocks/slider";
+@import "./blocks/main-footer";
+@import "./blocks/dealer";
+@import "./blocks/map";
+@import "./blocks/social";
+@import "./blocks/button";
+@import "./blocks/visually-hidden";
+@import "./blocks/catalog";
+@import "./blocks/card";
+@import "./blocks/additional";
+@import "./blocks/present";
+@import "./blocks/copyright";
+@import "./blocks/item";
+@import "./blocks/form";
+@import "./blocks/form-field";
