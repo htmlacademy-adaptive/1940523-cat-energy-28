@@ -1,10 +1,9 @@
 .present {
   padding: 59px 60px 10px;
   min-height: 302px;
-  background: $accent-color;
-  background: url("../img/green-bg.png"), url("../img/present-cat.jpg");
-  background-repeat: no-repeat;
-  background-position: center;  background-size: cover;
+  //background: $accent-color;
+  background: url("../img/green-bg.png"), url("../img/present-cat.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .present__icon {
