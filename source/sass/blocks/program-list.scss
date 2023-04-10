@@ -5,7 +5,7 @@
 .program-list__item {
   padding: 20px 22px 20px 22px;
   margin: 0 0 20px 0;
-  background-color: $background-additional-color;
+  background-color: $basic-grey-color;
 }
 
 .program-list__wrapper {
@@ -36,9 +36,9 @@
 }
 
 .program-list__title {
+  @include font-secondary;
   margin: 0;
   font-weight: 400;
-  font-family: "Oswald", serif;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -49,11 +49,22 @@
   padding: 22px 0;
   font-size: 14px;
   line-height: 18px;
+  color: $special-text-color;
+  text-align: start;
 }
 
 .program-list__link {
+  @include font-secondary;
   display: block;
   padding: 15px 47px 0 0;
   font-size: 16px;
   line-height: 16px;
+  color: $standard-text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: start;
+}
+
+.program-list__arrow {
+  margin-left: 15px;
 }

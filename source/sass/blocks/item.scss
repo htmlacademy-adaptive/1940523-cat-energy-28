@@ -3,8 +3,9 @@
 }
 
 .item__title {
-  font-family: "Oswald", sans-serif;
+  @include font-secondary;
   font-size: 16px;
+  font-weight: 400;
   line-height: 16px;
   color: $additional-text-color;
   text-transform: uppercase;
@@ -19,8 +20,4 @@
   line-height: 14px;
   color: $special-text-color;
   text-align: start;
-}
-
-.additional__button {
-  margin-top: 15px;
 }

@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <header class="main-header">
+  <header class="main-header container">
     <div class="main-header__logo logo">
       <a class="logo__wrapper" href="/">
         <img class="logo__image" src="img/logo.svg" width="34" height="37" alt="Котик.">
-        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
+        <img class="logo__text logo__text--header" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
       </a>
     </div>
     <div class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--nav-closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__toggle-line"></span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list main-nav__list--closed main-nav--nojs">
           <li class="site-list__item site-list__item--current">
-            <a href="/">
+            <a class="site-list__link" href="/">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -49,11 +50,11 @@
         <div class="form__group">
           <label class="form__field form-field">
             <span class="form-field__label">ИМЯ:*</span>
-            <input class="form-field__control" type="text" id="name" placeholder="барсик">
+            <input class="form-field__control" type="text" id="name" placeholder="барсик" required>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Вес (кг):*</span>
-            <input class="form-field__control" type="text" id="weight" placeholder="7">
+            <input class="form-field__control" type="text" id="weight" placeholder="7" required>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Возраст (лет):</span>
@@ -86,11 +87,11 @@
           <span class="form__group-title">Контактные данные (владельца кота)</span>
           <label class="form__field form-field">
             <span class="form-field__label">E-mail:*</span>
-            <input class="form-field__control" type="email" id="email" placeholder="kuklachev@gmail.com">
+            <input class="form-field__control form-field__control--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Телефон:*</span>
-            <input class="form-field__control" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <input class="form-field__control form-field__control--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
         <div class="form__group form__group--comment">
@@ -107,28 +108,28 @@
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--checkbox" type="checkbox" name="additional" value="sweetener" checked>
                 <span class="form-field__mark"></span>
-                <span class="form-field__label">сахарозаменитель</span>
+                <span class="form-field__label form-field__label--base-color">сахарозаменитель</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--checkbox" type="checkbox" name="additional" value="water">
                 <span class="form-field__mark"></span>
-                <span class="form-field__label">питьевая вода</span>
+                <span class="form-field__label form-field__label--base-color">питьевая вода</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--checkbox" type="checkbox" name="additional" value="milk">
                 <span class="form-field__mark"></span>
-                <span class="form-field__label">молоко</span>
+                <span class="form-field__label form-field__label--base-color">молоко</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--checkbox" type="checkbox" name="additional" value="vitamins">
                 <span class="form-field__mark"></span>
-                <span class="form-field__label">витамины</span>
+                <span class="form-field__label form-field__label--base-color">витамины</span>
               </label>
             </li>
           </ul>
@@ -167,13 +168,19 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">иконка Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">иконка Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">иконка Youtube</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">иконка Youtube</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">иконка Телеграмм</span></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">иконка Телеграмм</span>
+            </a>
           </li>
         </ul>
       </div>

@@ -3,6 +3,13 @@
   padding-bottom: 50px;
 }
 
+.about__title {
+  @include font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: start;
+}
+
 .about__list {
   @include list-reset;
 }
@@ -21,19 +28,19 @@
   background-position: center;
 
   &--leaf {
-    background-image: url("../../img/icons/icon-leaf.svg");
+    background-image: url("../img/icons/icon-leaf.svg");
   }
 
   &--powder {
-    background-image: url("../../img/icons/icon-powder.svg");
+    background-image: url("../img/icons/icon-powder.svg");
   }
 
   &--eat {
-    background-image: url("../../img/icons/icon-eat.svg");
+    background-image: url("../img/icons/icon-eat.svg");
   }
 
   &--time {
-    background-image: url("../../img/icons/icon-time.svg");
+    background-image: url("../img/icons/icon-time.svg");
   }
 }
 

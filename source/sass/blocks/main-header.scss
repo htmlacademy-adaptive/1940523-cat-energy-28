@@ -1,4 +1,10 @@
 .main-header {
+  display: flex;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 17px;
+}
+
+.main-header__logo {
+  max-width: 64%;
 }

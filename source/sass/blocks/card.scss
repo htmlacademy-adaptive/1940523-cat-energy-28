@@ -22,10 +22,14 @@
 
 .card__info {
   margin-bottom: 9px;
+
+  &--more {
+    margin: 0 auto;
+  }
 }
 
 .card__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -43,8 +47,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   color: $special-text-color;
   text-decoration: none;
+}
+
+.card__title {
+  @include font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $dark-text-color-2;
+
+  &--more {
+    color: $dark-text-color;
+  }
+}
+
+.card__subtitle {
+  padding: 0;
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 16px;
 }

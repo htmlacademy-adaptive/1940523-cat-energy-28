@@ -7,13 +7,16 @@
 }
 
 .results__title {
+  @include font-secondary;
   margin: 0 0 40px 0;
   font-size: 36px;
   line-height: 40px;
+  text-align: start;
 }
 
 .results__description {
   color: $special-text-color;
+  text-align: start;
 }
 
 .results__list {
@@ -26,27 +29,31 @@
 .results__item {
   padding: 14px 0 0 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
   border: 1px solid $special-grey-color;
   border-radius: 2px;
 }
 
 .results__item-title {
-  font-family: "Oswald", sans-serif;
+  @include font-secondary;
   font-size: 24px;
   line-height: 24px;
 }
 
 .results__item-description {
+  margin-top: 5px;
   font-size: 12px;
+  line-height: 12px;
   color: $special-text-color;
 }
 
 .results__text {
-  font-family: "Oswald", sans-serif;
+  @include font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .results__image {
