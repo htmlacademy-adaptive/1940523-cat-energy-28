@@ -19,6 +19,7 @@
 .additional__item {
   @include font-secondary;
   color: $dark-text-color-2;
+
   &:not(:last-child) {
     margin-bottom: 19px;
   }

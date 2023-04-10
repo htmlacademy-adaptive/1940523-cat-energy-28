@@ -10,6 +10,7 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .main-nav__toggle-line {
   height: 1.5px;
   width: 24px;
@@ -37,6 +38,7 @@
 }
 
 .main-nav__list {
+
   &--closed {
     display: none;
     position: absolute;
