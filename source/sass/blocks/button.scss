@@ -16,4 +16,11 @@
     color: $special-text-color;
     background-color: $basic-grey-color;
   }
+
+  &--submit {
+    @include font-secondary;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
