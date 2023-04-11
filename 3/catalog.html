@@ -12,27 +12,28 @@
     <div class="main-header__logo logo">
       <a class="logo__wrapper" href="/">
         <img class="logo__image" src="img/logo.svg" width="34" height="37" alt="Котик.">
-        <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
+        <img class="logo__text logo__text--header" src="img/logo-text.svg" width="101" height="18" alt="cat energy.">
       </a>
     </div>
     <div class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--nav-closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__toggle-line"></span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list main-nav__list--closed">
           <li class="site-list__item site-list__item--current">
-            <a href="/">
+            <a class="site-list__link" href="/">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -237,9 +238,9 @@
           </li>
           <li class="catalog__card card card--more">
             <div class="card__wrapper">
-              <div class="card__info">
-                <a class="card__link card__link--more" href="#">
-                  <h3 class="card__title">Показать еще 100500 товаров</h3>
+              <div class="card__info card__info--more">
+                <a class="card__link" href="#">
+                  <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
                 </a>
                 <p class="card__subtitle">На самом деле вкусов гораздо больше!</p>
               </div>
@@ -249,7 +250,7 @@
         </ul>
       </div>
     </section>
-    <section class="additional">
+    <section class="additional container">
       <div class="additional__wrapper">
         <h2 class="additional__title">Дополнительные товары</h2>
         <ul class="additional__list">
@@ -301,7 +302,6 @@
       <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
     </aside>
   </main>
-
   <footer class="main-footer">
     <aside class="main-footer__dealer dealer container">
       <div class="dealer__wrapper">
@@ -325,13 +325,19 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">иконка Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">иконка Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">иконка Youtube</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">иконка Youtube</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">иконка Телеграмм</span></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">иконка Телеграмм</span>
+            </a>
           </li>
         </ul>
       </div>
