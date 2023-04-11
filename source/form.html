@@ -43,7 +43,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Форма подбора программы</h1>
     <section class="form container">
-      <h2 class="form__title">Подбор программы</h2>
+      <h2 class="form__title title title--h1">Подбор программы</h2>
       <p class="form__subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru/" method="get">
@@ -66,25 +66,25 @@
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="slim" checked>
-                <span class="form-field__label">похудение</span>
+                <span class="form-field__label form-field__label--additional-color">похудение</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="pro">
-                <span class="form-field__label">Набор массы</span>
+                <span class="form-field__label form-field__label--additional-color">Набор массы</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field">
                 <input class="form-field__control form-field__control--radio" type="radio" name="program-type" value="help">
-                <span class="form-field__label">Не знаю (Нужен ваш совет)</span>
+                <span class="form-field__label form-field__label--additional-color">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </div>
         <div class="form__group form__group--owner">
-          <span class="form__group-title">Контактные данные (владельца кота)</span>
+          <span class="form__group-title title title--h3">Контактные данные (владельца кота)</span>
           <label class="form__field form-field">
             <span class="form-field__label">E-mail:*</span>
             <input class="form-field__control form-field__control--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -95,14 +95,14 @@
           </label>
         </div>
         <div class="form__group form__group--comment">
-          <span class="form__group-title">Комментарий</span>
+          <span class="form__group-title title title--h3">Комментарий</span>
           <label class="form__field form-field">
             <span class="form-field__label visually-hidden">Комментарий</span>
             <textarea class="form-field__control form-field__control--textarea" id="form-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </div>
         <div class="form__group form__group--additional form-group">
-          <span class="form__group-title">Дополнительно</span>
+          <span class="form__group-title title title--h3">Дополнительно</span>
           <ul class="form-group__list">
             <li class="form-group__item">
               <label class="form__field form-field">
@@ -137,9 +137,7 @@
         <div class="form__container">
           <button class="form__button button button--submit" type="submit">отправить заявку</button>
           <p class="form__legend">
-            <small>
               * — Обязательные поля
-            </small>
           </p>
         </div>
       </form>
