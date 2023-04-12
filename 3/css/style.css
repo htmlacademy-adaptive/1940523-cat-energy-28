@@ -76,15 +76,16 @@ body {
   padding: 27px 0 0 0;
   margin: 0 -30px 0 -30px;
   min-height: 302px;
-  background: url("../img/index-bg.png"), url("../img/index-background.jpg") no-repeat center;
+  background-color: #68b738;
+  background-image: url("../img/index-bg.png"), url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .choose-program__title {
   padding: 0 20px 0 20px;
   margin: 0 0 25px 0;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .choose-program__slogan {
@@ -197,9 +198,6 @@ body {
 }
 
 .about__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
   text-align: start;
 }
 
@@ -248,10 +246,7 @@ body {
 }
 
 .results__title {
-  font-family: "Oswald", "Arial", sans-serif;
   margin: 0 0 40px 0;
-  font-size: 36px;
-  line-height: 40px;
   text-align: start;
 }
 
@@ -397,6 +392,7 @@ body {
 }
 
 .button {
+  font-family: "Oswald", "Arial", sans-serif;
   display: block;
   padding: 10px 0;
   width: 100%;
@@ -408,17 +404,14 @@ body {
   border: none;
 }
 .button--additional {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
   background-color: #f2f2f2;
 }
 .button--submit {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -512,6 +505,7 @@ body {
   margin: 5px 0 0;
   font-size: 12px;
   line-height: 16px;
+  color: #444444;
 }
 
 .additional {
@@ -519,12 +513,8 @@ body {
 }
 
 .additional__title {
-  font-family: "Oswald", "Arial", sans-serif;
   margin: 25px 0 36px;
-  font-size: 24px;
-  line-height: 24px;
   text-align: start;
-  font-weight: 400;
 }
 
 .additional__list {
@@ -549,7 +539,10 @@ body {
 .present {
   padding: 59px 60px 10px;
   min-height: 302px;
-  background: url("../img/green-bg.png"), url("../img/present-cat.jpg") no-repeat center;
+  background-color: #68b738;
+  background-image: url("../img/green-bg.png"), url("../img/present-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -599,8 +592,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 13px;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: #444444;
   text-align: start;
 }
@@ -612,9 +607,6 @@ body {
 
 .form__title {
   margin: 0 0 37px;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
 }
 
 .form__subtitle {
@@ -639,8 +631,6 @@ body {
 
 .form__group-title {
   margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 26px;
   color: #000000;
   text-align: start;
 }
@@ -677,6 +667,9 @@ body {
 }
 .form-field__label--base-color {
   color: #000000;
+}
+.form-field__label--additional-color {
+  color: #222222;
 }
 
 .form-field__control {
@@ -802,5 +795,27 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.title--h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
+.title--h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+.title--h3 {
+  font-size: 24px;
+  line-height: 26px;
+}
+.title--small {
+  font-size: 24px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
