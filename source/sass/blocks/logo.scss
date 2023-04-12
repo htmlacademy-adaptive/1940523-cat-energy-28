@@ -1,0 +1,10 @@
+.logo__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__text {
+  &--header {
+    margin-left: 40%;
+  }
+}

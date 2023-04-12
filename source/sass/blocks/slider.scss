@@ -1,0 +1,22 @@
+.slider__items {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__image {
+  width: 162px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--before {
+    background-image: url("../img/mobile/cat-before-mobile.png");
+    background-position: -18% 50%;
+  }
+
+  &--after {
+    background-image: url("../img/mobile/cat-after-mobile.png");
+    background-position: 120% 50%;
+  }
+}

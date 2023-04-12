@@ -1,0 +1,37 @@
+.choose-program {
+  @include font-secondary;
+  text-align: center;
+  color: $base-color;
+}
+
+.choose-program__wrapper {
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.choose-program__content {
+  padding: 27px 0 0 0;
+  margin: 0 -30px 0 -30px;
+  min-height: 302px;
+  background-color: $accent-color;
+  background-image: url("../img/index-bg.png"), url("../img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.choose-program__title {
+  padding: 0 20px 0 20px;
+  margin: 0 0 25px 0;
+}
+
+.choose-program__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.choose-program__image-wrapper {
+  margin-top: -135px;
+}

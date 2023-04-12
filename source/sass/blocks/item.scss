@@ -1,0 +1,25 @@
+.item {
+  padding-top: 13px;
+}
+
+.item__title {
+  @include font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $additional-text-color;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.item__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $special-text-color;
+  text-align: start;
+}

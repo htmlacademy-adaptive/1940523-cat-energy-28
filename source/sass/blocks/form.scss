@@ -1,0 +1,49 @@
+.form {
+  @include font-secondary;
+  padding-top: 27px;
+}
+
+.form__title {
+  margin: 0 0 37px;
+}
+
+.form__subtitle {
+  margin: 0 0 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 24px;
+  color: $special-text-color;
+
+  &--radio {
+    padding-bottom: 19px;
+    color: $additional-text-color;
+  }
+}
+
+.form__group-title {
+  margin-bottom: 35px;
+  color: $standard-text-color;
+  text-align: start;
+}
+
+.form__group-list {
+  @include list-reset;
+  text-align: start;
+}
+
+.form__legend {
+  margin: 0;
+  padding-top: 21px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}

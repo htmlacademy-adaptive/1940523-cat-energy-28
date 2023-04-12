@@ -1,0 +1,25 @@
+.present {
+  padding: 59px 60px 10px;
+  min-height: 302px;
+  background-color: $accent-color;
+  background-image: url("../img/green-bg.png"), url("../img/present-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.present__icon {
+  margin: 0 auto;
+  width: 78px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/icons/icon-gift.svg");
+}
+
+.present__description {
+  margin: 48px 0 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color;
+}
