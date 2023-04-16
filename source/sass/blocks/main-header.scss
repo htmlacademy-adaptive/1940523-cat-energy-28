@@ -1,12 +1,10 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 17px;
+  padding: 10px 0 17px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 18px;
-    padding-bottom: 15px;
+    padding: 18px 15px;
     align-items: center;
   };
 
