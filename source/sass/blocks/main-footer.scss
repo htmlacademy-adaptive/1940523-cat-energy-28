@@ -1,5 +1,5 @@
 .main-footer {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
   }
 }
@@ -8,7 +8,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
   padding-bottom: 20px;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -28,7 +28,7 @@
 .main-footer__social {
   padding: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     min-width: 135px;
   }
@@ -37,7 +37,7 @@
 .main-footer__copyright {
   padding-top: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
 }

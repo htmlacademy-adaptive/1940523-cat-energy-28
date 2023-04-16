@@ -10,13 +10,13 @@
 .about__list {
   @include list-reset;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 37px 150px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
 }

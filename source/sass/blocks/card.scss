@@ -63,7 +63,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -20%;
-    left: calc(50% - 88px);;
+    left: calc(50% - 88px);
     width: 168px;
     height: 200px;
     object-fit: contain;
@@ -84,7 +84,7 @@
     margin: 30px 0 39px 0;
     background: $card-plus-color;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       left: 0;

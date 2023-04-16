@@ -3,12 +3,12 @@
   text-align: center;
   color: $base-color;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
     color: $standard-text-color;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 80px;
     overflow: visible;
   }
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: stretch;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     position: relative;
   }
@@ -36,7 +36,7 @@
   background-position: center;
   background-size: cover;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 40px 0 20px 0;
     margin: 0;
     min-height: 181px;
@@ -55,12 +55,12 @@
   padding: 0 20px 0 20px;
   margin: 0 0 25px 0;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 34px 0 87px;
     margin: 0 0 41px 0;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 34px 0 80px;
     max-width: 540px;
   }
@@ -85,7 +85,7 @@
 .choose-program__image-wrapper {
   margin-top: -135px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     //order: 3;
     margin-top: 0;
   }
@@ -99,7 +99,7 @@
     top: -174px;
     z-index: -1;
     background-color: $accent-color;
-    background-image:  url("../img/index-bg.png"), url("../img/index-background.jpg");
+    background-image: url("../img/index-bg.png"), url("../img/index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -123,7 +123,7 @@
 }
 
 .choose-program__link {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     left: 13%;
     top: 270px;
