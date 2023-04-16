@@ -1,3 +1,33 @@
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 165px;
+  }
+}
+
 .catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 68px 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 141px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 144px 80px;
+  }
+}
+
+.catalog__card {
+  margin: 0 -25px 0 -25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

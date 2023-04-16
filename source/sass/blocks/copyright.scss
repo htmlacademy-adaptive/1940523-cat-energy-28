@@ -9,3 +9,10 @@
   color: $special-text-color;
   text-decoration: none;
 }
+
+.copyright__logo {
+
+  @media(min-width: $tablet-width) {
+    margin-left: 28px;
+  }
+}

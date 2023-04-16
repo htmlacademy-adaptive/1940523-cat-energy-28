@@ -1,15 +1,48 @@
 .additional {
   margin-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .additional__title {
   margin: 25px 0 36px;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .additional__list {
   @include list-reset;
   padding: 0 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border: 1px solid $special-grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border: none;
+    max-width: 92%;
+  }
 }
 
 .additional__item {
@@ -17,10 +50,24 @@
   color: $dark-text-color-2;
 
   &:not(:last-child) {
-    margin-bottom: 19px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .additional__button {
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    margin-top: 0;
+  }
 }

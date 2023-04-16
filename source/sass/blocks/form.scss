@@ -1,10 +1,23 @@
 .form {
   @include font-secondary;
   padding-top: 27px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .form__title {
   margin: 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .form__subtitle {
@@ -13,18 +26,68 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
 }
 
 .form__group {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   color: $special-text-color;
+
+  &--base {
+    @media (min-width: $desktop-width) {
+      width: 47%;
+    }
+  }
 
   &--radio {
     padding-bottom: 19px;
     color: $additional-text-color;
+
+    @media (min-width: $tablet-width) {
+      padding: 25px 27px 16px;
+      border: 1px solid $form-border-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 47%;
+    }
+  }
+
+  &--owner {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 }
 
@@ -46,4 +109,21 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 64px;
+    font-size: 16px;
+  }
+}
+
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    max-width: 283px;
+  }
 }
