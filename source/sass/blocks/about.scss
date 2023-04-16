@@ -11,7 +11,7 @@
   @include list-reset;
 
   @media(min-width: $tablet-width) {
-   display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 37px 150px;
   }
