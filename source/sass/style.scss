@@ -9,6 +9,9 @@
 
 
 //стили блоков
+@import "./blocks/button";
+@import "./blocks/image";
+@import "./blocks/visually-hidden";
 @import "./blocks/page";
 @import "./blocks/container";
 @import "./blocks/main-header";
@@ -22,8 +25,6 @@
 @import "./blocks/main-footer";
 @import "./blocks/dealer";
 @import "./blocks/social";
-@import "./blocks/button";
-@import "./blocks/visually-hidden";
 @import "./blocks/catalog";
 @import "./blocks/card";
 @import "./blocks/additional";

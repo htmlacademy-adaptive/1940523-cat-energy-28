@@ -16,6 +16,11 @@
   }
 
   &--radio {
+    @media (min-width: $tablet-width) {
+      padding: 25px 27px 16px;
+      border: 1px solid $form-border-color;
+    }
+
     @media (min-width: $desktop-width) {
       flex-direction: column;
     }

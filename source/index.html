@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<header class="main-header container">
+<header class="main-header main-header--index">
+<div class="main-header__wrapper container">
   <div class="main-header__logo logo">
     <a class="logo__wrapper" href="/">
       <img class="logo__image" src="img/logo.svg" width="34" height="37" alt="Котик.">
@@ -39,21 +40,23 @@
       </ul>
     </div>
   </div>
+</div>
 </header>
 <main class="main-container">
   <h1 class="visually-hidden">Кэт Энерджи - магазин питания для котов и кошек.</h1>
   <section class="choose-program">
+    <div class="choose-program__image-background"></div>
     <div class="choose-program__wrapper">
       <div class="choose-program__content">
         <h2 class="choose-program__title title title--h1">Функциональное питание для котов</h2>
         <p class="choose-program__slogan">
           Занялся собой? Займись котом!
         </p>
+        <div class="choose-program__image-wrapper">
+          <img class="choose-program__image image" src="img/index-product.png" width="280" height="270" alt="Изображение товара Cat Energy PRO 500 г. с курицей.">
+        </div>
+        <a class="choose-program__link button" href="catalog.html">Подобрать программу</a>
       </div>
-      <div class="choose-program__image-wrapper">
-        <img class="choose-program__image" src="img/index-product.png" width="280" height="270" alt="Изображение товара Cat Energy PRO 500 г. с курицей.">
-      </div>
-      <a class="choose-program__link button" href="catalog.html">Подобрать программу</a>
     </div>
   </section>
   <section class="program container">
@@ -203,8 +206,16 @@
   <section class="map">
     <div class="map__wrapper">
       <h2 class="map__title visually-hidden">Мы на карте</h2>
-      <img class="map__image" src="img/mobile/map.png" width="320" height="360" alt="Местоположения на карте.">
-    </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1160726408207!2d30.317857323536607!3d59.939475593588824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681412831212!5m2!1sru!2sru"
+        width="1440"
+        height="400"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+        class="map__iframe">
+      </iframe>    </div>
   </section>
   <div class="main-footer__wrapper container">
     <a class="main-footer__logo logo" href="/">
