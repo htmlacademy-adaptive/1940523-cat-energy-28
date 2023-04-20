@@ -125,7 +125,7 @@
 }
 
 .form__group-title__wrapper {
-  background: linear-gradient( to bottom, transparent 50%, $accent-color 50%, transparent calc(50% + 2px) 100%);
+  background: linear-gradient(to bottom, transparent 50%, $accent-color 50%, transparent calc(50% + 2px) 100%);
   background-position-y: revert;
   padding: 0 90px 4px 0;
   margin-bottom: 35px;
@@ -140,7 +140,7 @@
   padding-right: 17px;
   color: $standard-text-color;
   text-align: start;
-  background-color: white;
+  background-color: $base-color;
 
   @media (min-width: $tablet-width) {
     padding-right: 17px;
