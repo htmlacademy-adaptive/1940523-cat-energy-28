@@ -5,8 +5,8 @@
   position: relative;
   padding: 0 20px 20px;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -137,7 +137,6 @@
   @media (max-width: $desktop-width) {
     object-fit: contain;
   }
-
 }
 
 .choose-program__link {
