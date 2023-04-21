@@ -15,10 +15,6 @@
   }
 }
 
-.results__wrapper {
-  padding: 25px 0 40px;
-}
-
 .results__title {
   margin: 0 0 40px 0;
   text-align: start;
@@ -105,8 +101,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -125px;
-    width: 100%;
+    width: 560px;
+    left: 52%;
+    top: -103px;
+    margin: 0;
     z-index: 1;
   }
 }

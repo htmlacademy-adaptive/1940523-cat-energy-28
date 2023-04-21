@@ -5,6 +5,39 @@
   position: relative;
   padding: 0 20px 20px;
 
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 302px;
+    width: 100%;
+    background-color: $accent-color;
+    background-image: url("../img/index-bg.png"), url("../img/index-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      min-height: 694px;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      right: 0;
+      left: auto;
+      background-color: $accent-color;
+      background-image: url("../img/index-bg.png"), url("../img/index-background-desktop-1.jpg");
+      background-position: 50% 50%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     text-align: left;
@@ -30,44 +63,13 @@
   }
 }
 
-.choose-program__image-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 302px;
-  width: 100%;
-  background-color: $accent-color;
-  background-image: url("../img/index-bg.png"), url("../img/index-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    min-height: 694px;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    right: 0;
-    left: auto;
-    background-color: $accent-color;
-    background-image: url("../img/index-bg.png"), url("../img/index-background-desktop-1.jpg");
-    background-position: 50% 50%;
-  }
-}
-
 .choose-program__content {
   padding: 27px 0 0 0;
   min-height: 302px;
 
 
   @media (min-width: $tablet-width) {
-    padding: 63px 163px 0 118px;
+    padding: 47px 163px 0 118px;
     margin: 0;
   }
 
@@ -95,6 +97,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,9 +112,10 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin: 0;
-    width: 709px;
-    height: 609px;
+    bottom: -21px;
+    right: 47px;
+    width: 588px;
+    height: 591px;
     z-index: -1;
   }
 
@@ -120,12 +124,24 @@
     width: 552px;
     height: 499px;
     top: 34px;
-    left: 465px;
+    right: 200px;
+    bottom: 0;
   }
 }
 
+.choose-program__image {
+  @media (max-width: $tablet-width) {
+    object-fit: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    object-fit: contain;
+  }
+
+}
+
 .choose-program__link {
-  padding: 14px 26px;
+  padding: 14px 29px;
   width: auto;
   display: inline-block;
 

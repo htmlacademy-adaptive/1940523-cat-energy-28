@@ -1,11 +1,3 @@
-.dealer {
-  background-color: $basic-grey-color;
-
-  @media (min-width: $desktop-width) {
-    background-color: $base-color;
-  }
-}
-
 .dealer__wrapper {
   padding: 26px 0;
   display: flex;
@@ -18,7 +10,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    right: calc(50% - 75px);
     max-width: 575px;
     padding: 56px 60px 56px 80px;
     background-color: $base-color;

@@ -18,7 +18,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     max-width: 250px;
-    margin-top: 25px;
+    margin-top: 0;
     padding: 55px 43px 42px 40px;
   }
 }
@@ -41,17 +41,20 @@
 }
 
 .present__description {
-  margin-top: 48px;
+  margin: 48px 0 0;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $base-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    text-align: left;
+    margin: 0;
     max-width: 160px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 46px;
+    text-align: center;
+    padding-top: 36px;
   }
 }
