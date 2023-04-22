@@ -6,6 +6,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 124px 69px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 250px;
+    margin-top: 0;
+    padding: 55px 43px 42px 40px;
+  }
 }
 
 .present__icon {
@@ -15,11 +30,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/icons/icon-gift.svg");
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .present__description {
   margin: 48px 0 0;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $base-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin: 0;
+    max-width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-top: 36px;
+  }
 }

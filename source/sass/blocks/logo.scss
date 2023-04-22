@@ -5,6 +5,10 @@
 
 .logo__text {
   &--header {
-    margin-left: 40%;
+    margin-left: 56px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+    }
   }
 }

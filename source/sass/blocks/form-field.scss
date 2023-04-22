@@ -19,6 +19,11 @@
   &--additional-color {
     color: $dark-text-color-2;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-field__control {
@@ -33,6 +38,12 @@
   border: 1px solid $form-border-color;
   text-transform: uppercase;
   min-width: 173px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 29px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &--radio {
     flex-grow: 0;

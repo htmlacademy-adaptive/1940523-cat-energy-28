@@ -1,6 +1,13 @@
 .site-list {
   @include list-reset;
   text-align: center;
+  color: $standard-text-color;
+
+  &--main {
+    @media (min-width: $desktop-width) {
+      color: $base-color;
+    }
+  }
 }
 
 .site-list__item {
@@ -11,9 +18,20 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .site-list__link {
-  color: $standard-text-color;
   text-decoration: none;
+  color: inherit;
 }

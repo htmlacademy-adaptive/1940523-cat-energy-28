@@ -9,6 +9,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle-line {
@@ -45,5 +49,25 @@
     right: 0;
     z-index: 1;
     background-color: $base-color;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet-width) {
+    min-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
   }
 }

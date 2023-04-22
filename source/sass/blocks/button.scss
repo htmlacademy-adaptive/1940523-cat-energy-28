@@ -1,7 +1,7 @@
 .button {
   @include font-secondary;
   display: block;
-  padding: 10px 0;
+  padding: 7px 0;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -9,6 +9,10 @@
   text-decoration: none;
   background-color: $accent-color;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 0;
+  }
 
   &--additional {
     font-size: 16px;
@@ -20,5 +24,11 @@
   &--submit {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  &--catalog {
+    font-size: 16px;
+    line-height: 1;
+    padding: 10px 0;
   }
 }
