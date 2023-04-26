@@ -50,7 +50,7 @@
   left: 50%;
   transform: translate(-50%);
 
-  &:before {
+  &::before {
     content: url("../img/mobile/curtain.png");
     position: absolute;
     bottom: 0;
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    &:before {
+    &::before {
       content: url("../img/tablet/curtain.png");
     }
   }

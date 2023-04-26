@@ -103,6 +103,7 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 46px;
     }
+
     @media (min-width: $desktop-width) {
       margin-bottom: 40px;
     }
@@ -251,6 +252,7 @@
 
 .form__submit-container {
   margin-top: 36px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }

@@ -135,7 +135,7 @@
   }
 }
 
-.form-field__control[type="radio"]:checked + .form-field__input-mark--radio:before {
+.form-field__control[type="radio"]:checked + .form-field__input-mark--radio::before {
   content: "";
   position: absolute;
   top: 8px;
