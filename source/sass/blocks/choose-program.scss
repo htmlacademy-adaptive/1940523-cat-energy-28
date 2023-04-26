@@ -47,6 +47,7 @@
   @media (min-width: $desktop-width) {
     padding: 110px 0 54px;
     margin-bottom: 80px;
+    z-index: -1;
   }
 }
 
@@ -140,11 +141,12 @@
 }
 
 .choose-program__link {
-  padding: 14px 29px;
+  padding: 14px 70px;
   width: auto;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
+    padding: 14px 29px;
     text-align: center;
     font-size: 20px;
     line-height: 20px;

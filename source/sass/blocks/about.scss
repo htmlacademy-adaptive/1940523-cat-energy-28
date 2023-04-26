@@ -14,6 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 37px 150px;
+    counter-set: item;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +27,35 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 40px 0 57px 0;
     flex-direction: column;
+    align-items: start;
+
+    &:before {
+      @include font-secondary;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      counter-increment: item;
+      content: counter(item);
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 40px 0;
+  }
+}
+
+.about__item:not(:last-child) {
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -53,8 +82,20 @@
   &--time {
     background-image: url("../img/icons/icon-time.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .about__description {
   color: $special-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
 }

@@ -22,13 +22,25 @@
   }
 
   &--submit {
+    width: auto;
+    padding: 8px 0;
     font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px 67px;
+      font-size: 20px;
+      line-height: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 20px 208px;
+    }
   }
 
   &--catalog {
     font-size: 16px;
     line-height: 1;
-    padding: 10px 0;
+    padding: 12px 0;
   }
 }

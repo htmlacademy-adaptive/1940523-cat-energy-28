@@ -104,6 +104,11 @@
   line-height: 37px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
   }
@@ -119,6 +124,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $standard-text-color;
   }
 }
 
@@ -132,6 +140,11 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-list__arrow {
