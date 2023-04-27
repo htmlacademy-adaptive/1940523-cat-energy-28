@@ -22,12 +22,13 @@
   }
 
   &--submit {
-    width: auto;
+    width: 100%;
     padding: 8px 0;
     font-size: 16px;
     line-height: 20px;
 
     @media (min-width: $tablet-width) {
+      width: auto;
       padding: 20px 67px;
       font-size: 20px;
       line-height: 10px;

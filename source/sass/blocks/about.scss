@@ -1,10 +1,20 @@
 .about {
-  margin-top: 20px;
+  margin-top: 26px;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+  }
 }
 
 .about__title {
   text-align: start;
+  margin: 0 0 39px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .about__list {
@@ -19,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 76px;
   }
 }
 
@@ -60,6 +71,7 @@
 }
 
 .about__icon {
+  display: block;
   margin: 0 20px 0 0;
   width: 60px;
   height: 60px;
@@ -90,6 +102,7 @@
 }
 
 .about__description {
+  margin: 0;
   color: $special-text-color;
 
   @media (min-width: $tablet-width) {

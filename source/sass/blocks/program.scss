@@ -1,5 +1,7 @@
 .program {
-  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .program__list {

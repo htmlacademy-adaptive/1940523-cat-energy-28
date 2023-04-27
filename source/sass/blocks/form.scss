@@ -61,8 +61,8 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
-      margin-left: 0;
-      margin-bottom: 0;
+      width: 47%;
+      margin: 0 78px 0 0;
     }
   }
 
@@ -84,6 +84,7 @@
     @media (min-width: $desktop-width) {
       padding: 0;
       margin-left: 0;
+      width: 47px;
     }
   }
 
@@ -127,105 +128,44 @@
     margin: 0 auto;
     max-width: 1220px;
   }
+}
 
-  &--owner,
-  &--additional,
-  &--comment {
-    background-color: $base-color;
-  }
-
-  &--owner {
-    padding-right: 0;
-    padding-left: 19px;
-
-    @media (min-width: $desktop-width) {
-      padding-left: 47px;
-    }
-  }
-
-  &--comment {
-    @media (min-width: $tablet-width) {
-      padding-left: 40px;
-    }
-  }
-
-  &--additional {
-    @media (min-width: $tablet-width) {
-      padding-left: 36px;
-      padding-right: 10px;
-    }
-  }
+.form__group-title__wrapper,
+.form__title-container {
+  background: linear-gradient(to bottom, transparent 0 50%, #68b738 50% calc(50% + 2px), transparent calc(50% + 2px) 100%);
 }
 
 .form__group-title__wrapper {
-  background-position-y: revert;
   margin-bottom: 35px;
+}
+
+.form__title-container {
+  padding-right: 20px;
+  max-width: 245px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-right: 30px;
+    padding-left: 26px;
   }
 
-  &--owner {
-    padding: 0 100px 4px 0;
-    background: linear-gradient(to bottom, transparent 24%, $accent-color 28%, transparent calc(23% + 2px) 100%);
-    margin-bottom: 29px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0 146px 4px 50px;
-      background: linear-gradient(to bottom, transparent 45%, #68b738 52%, transparent calc(23% + 2px));
-      margin-bottom: 64px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 778px 4px 61px;
-    }
-  }
-
-  &--comment {
-    padding: 7px 157px 4px 0;
-    background: linear-gradient(to bottom, transparent 51%, $accent-color 58%, transparent calc(23% + 2px) 100%);
-    margin-bottom: 29px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0 480px 38px 32px;
-      background: linear-gradient(to bottom, transparent 25%, #68b738 29%, transparent calc(23% + 2px));
-      margin-bottom: 34px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 77% 38px 70px;
-    }
-  }
-
-  &--additional {
-    padding: 12px 136px 4px 0;
-    background: linear-gradient(to bottom, transparent 57%, $accent-color 63%, transparent calc(23% + 2px) 100%);
-    margin-bottom: 29px;
-
-    @media (min-width: $tablet-width) {
-      padding: 12px 446px 4px 31px;
-      background: linear-gradient(to bottom, transparent 57%, #68b738 63%, transparent calc(23% + 2px));
-      margin-bottom: 49px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 18px 75% 4px 72px;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .form__group-title {
   display: inline-block;
-  padding-right: 17px;
+  padding: 0 22px 0 20px;
   color: $standard-text-color;
+  background: $base-color;
   text-align: start;
 
   @media (min-width: $tablet-width) {
-    padding-right: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    padding: 0 40px;
   }
 }
 

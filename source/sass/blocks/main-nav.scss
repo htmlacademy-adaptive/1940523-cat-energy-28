@@ -21,6 +21,10 @@
   background-color: $standard-text-color;
 }
 
+.main-nav__toggle--nojs .main-nav__toggle-line {
+  display: none;
+}
+
 .main-nav__toggle--closed .main-nav__toggle-line::before {
   content: "";
   height: 2px;
@@ -41,13 +45,11 @@
   background-color: $standard-text-color;
 }
 
-.main-nav__toggle--opened .main-nav__toggle-line,
-.main-nav__toggle--nojs .main-nav__toggle-line {
+.main-nav__toggle--opened .main-nav__toggle-line {
   transform: rotate(45deg);
 }
 
-.main-nav__toggle--opened .main-nav__toggle-line::after,
-.main-nav__toggle--nojs .main-nav__toggle-line::after {
+.main-nav__toggle--opened .main-nav__toggle-line::after{
   content: "";
   height: 2px;
   width: 24px;
