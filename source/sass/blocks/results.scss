@@ -77,6 +77,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
+
     &:not(:first-child) {
       margin-left: 69px;
     }
