@@ -84,7 +84,7 @@
     @media (min-width: $desktop-width) {
       padding: 0;
       margin-left: 0;
-      width: 47px;
+      width: 47%;
     }
   }
 
@@ -132,7 +132,7 @@
 
 .form__group-title__wrapper,
 .form__title-container {
-  background: linear-gradient(to bottom, transparent 0 50%, #68b738 50% calc(50% + 2px), transparent calc(50% + 2px) 100%);
+  background: linear-gradient(to bottom, transparent 0 50%, $accent-color 50% calc(50% + 2px), transparent calc(50% + 2px) 100%);
 }
 
 .form__group-title__wrapper {
