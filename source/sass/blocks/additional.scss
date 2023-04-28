@@ -1,18 +1,19 @@
 .additional {
-  margin-bottom: 19px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 90px;
   }
 }
 
 .additional__wrapper {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -20,46 +21,67 @@
   }
 }
 
+.additional__title-wrapper,
+.additional__title-container {
+  background: linear-gradient(to bottom, transparent 0 50%, $accent-color 50% calc(50% + 2px), transparent calc(50% + 2px) 100%);
+}
+
 .additional__title-wrapper {
-  background: linear-gradient(to bottom, transparent 50%, $accent-color 50%, transparent calc(50% + 2px) 100%);
-  background-position-y: revert;
-  padding: 0 90px 4px 0;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin-bottom: 80px;
+  }
+}
+
+.additional__title-container {
+  padding-right: 20px;
+  max-width: 315px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-right: 30px;
+    padding-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .additional__title {
-  margin: 25px 0 36px;
-  text-align: start;
   display: inline-block;
-  padding-right: 17px;
+  padding: 0 22px 0 20px;
+  margin: 0;
   background-color: $base-color;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
-    padding-right: 17px;
+    padding: 0 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    padding: 0 40px 0 35px;
   }
 }
 
 .additional__list {
   @include list-reset;
-  padding: 0 0 19px;
+  padding: 0 0 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
+    padding: 0 38px 0;
     border: 1px solid $special-grey-color;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     border: none;
-    max-width: 70%;
+    max-width: 73%;
     flex-grow: 1;
   }
 }
@@ -78,7 +100,7 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 21px;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +111,7 @@
 
 .additional__block {
   @media (min-width: $tablet-width) {
-    margin-top: 69px;
+    margin-top: 64px;
   }
 }
 

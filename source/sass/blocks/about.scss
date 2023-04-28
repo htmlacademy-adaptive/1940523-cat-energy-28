@@ -1,10 +1,20 @@
 .about {
-  margin-top: 20px;
+  margin-top: 26px;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+  }
 }
 
 .about__title {
   text-align: start;
+  margin: 0 0 39px 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .about__list {
@@ -14,10 +24,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 37px 150px;
+    counter-set: item;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 76px;
   }
 }
 
@@ -26,11 +38,40 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 40px 0 57px 0;
     flex-direction: column;
+    align-items: start;
+
+    &::before {
+      @include font-secondary;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      counter-increment: item;
+      content: counter(item);
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 40px 0;
+  }
+}
+
+.about__item:not(:last-child) {
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
 .about__icon {
+  display: block;
   margin: 0 20px 0 0;
   width: 60px;
   height: 60px;
@@ -53,8 +94,21 @@
   &--time {
     background-image: url("../img/icons/icon-time.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .about__description {
+  margin: 0;
   color: $special-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
 }

@@ -1,5 +1,5 @@
 .item {
-  padding: 15px 0 15px;
+  padding: 8px 0 15px;
   border-bottom: 1px solid $card-border-color;
 
   &:first-child {
@@ -7,6 +7,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 25px 0 30px;
+
     &:first-child {
       border-top: none;
     }
@@ -17,6 +19,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 18px 0 13px;
+
     &:first-child {
       border-top: 1px solid $card-border-color;
     }
@@ -30,10 +34,11 @@
 .item__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    flex-grow: 1;
     align-items: center;
     width: 60%;
   }
@@ -53,6 +58,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    width: fit-content;
   }
 }
 
@@ -69,12 +75,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    min-width: 30%;
+    min-width: 35%;
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 200px;
+    min-width: 44%;
+    margin-right: 34px;
   }
 }

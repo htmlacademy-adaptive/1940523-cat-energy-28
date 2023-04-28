@@ -1,6 +1,6 @@
 .present {
   padding: 59px 60px 10px;
-  min-height: 302px;
+  min-height: 289px;
   background-color: $accent-color;
   background-image: url("../img/green-bg.png"), url("../img/present-cat.jpg");
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 57px 124px 69px 77px;
+    padding: 59px 126px 62px 78px;
   }
 
   @media (min-width: $desktop-width) {

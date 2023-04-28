@@ -5,13 +5,18 @@
 }
 
 .main-footer__wrapper {
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
   }
 }
 

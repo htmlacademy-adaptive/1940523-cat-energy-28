@@ -13,7 +13,7 @@
 }
 
 .form__title {
-  margin: 0 0 37px;
+  margin: 0 0 57px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -28,6 +28,7 @@
   text-align: start;
 
   @media (min-width: $tablet-width) {
+    margin: 0 4px 66px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -35,41 +36,40 @@
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 70px;
+    margin: 0 auto 35px;
     max-width: 1220px;
   }
 }
 
 .form__group {
-  margin-bottom: 24px;
   color: $special-text-color;
 
   &--base {
-    padding: 0 20px 19px;
-    margin-bottom: 24px;
+    padding: 0 20px 10px;
 
     @media (min-width: $tablet-width) {
       padding: 0 67px 0 71px;
-      margin: 0 auto 72px;
+      margin: 0 auto 45px;
       max-width: 800px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0;
-      margin: 0 auto;
+      width: 47%;
+      margin: 0 78px 0 0;
     }
   }
 
   &--radio {
     color: $additional-text-color;
-    padding: 22px 20px 19px;
-    margin-bottom: 26px;
+    padding: 22px 20px 8px;
+    margin-bottom: 27px;
     border-top: 1px solid $background-additional-color;
     border-bottom: 1px solid $background-additional-color;
 
@@ -83,24 +83,30 @@
 
     @media (min-width: $desktop-width) {
       padding: 0;
+      margin-left: 0;
+      width: 47%;
     }
   }
 
   &--owner {
     @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 50px;
     }
   }
 
   &--comment {
     @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 53px;
     }
   }
 
   &--additional {
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
     }
   }
 }
@@ -117,37 +123,49 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 110px;
-    padding-left: 111px;
+    padding-right: 0;
+    padding-left: 0;
     margin: 0 auto;
     max-width: 1220px;
   }
 }
 
+.form__group-title__wrapper,
+.form__title-container {
+  background: linear-gradient(to bottom, transparent 0 50%, $accent-color 50% calc(50% + 2px), transparent calc(50% + 2px) 100%);
+}
+
 .form__group-title__wrapper {
-  background: linear-gradient(to bottom, transparent 50%, $accent-color 50%, transparent calc(50% + 2px) 100%);
-  background-position-y: revert;
-  padding: 0 90px 4px 0;
   margin-bottom: 35px;
+}
+
+.form__title-container {
+  padding-right: 20px;
+  max-width: 245px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-right: 30px;
+    padding-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1300px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .form__group-title {
   display: inline-block;
-  padding-right: 17px;
+  padding: 0 22px 0 20px;
   color: $standard-text-color;
+  background: $base-color;
   text-align: start;
-  background-color: $base-color;
 
   @media (min-width: $tablet-width) {
-    padding-right: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    padding: 0 40px;
   }
 }
 
@@ -163,21 +181,23 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-left: 64px;
     font-size: 16px;
+    text-align: left;
   }
 }
 
 .form__submit-container {
+  margin-top: 36px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
-}
 
-.form__button {
-  @media (min-width: $tablet-width) {
-    max-width: 283px;
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

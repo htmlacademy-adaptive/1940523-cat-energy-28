@@ -1,6 +1,19 @@
 .logo__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 7px;
+}
+
+.logo__image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .logo__text {
@@ -8,7 +21,7 @@
     margin-left: 56px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 20px;
+      display: none;
     }
   }
 }

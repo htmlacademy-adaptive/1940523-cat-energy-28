@@ -44,3 +44,23 @@
     }
   }
 }
+
+.slider__toggle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+  &::before {
+    content: url("../img/mobile/curtain.png");
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    right: -15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: url("../img/tablet/curtain.png");
+    }
+  }
+}
