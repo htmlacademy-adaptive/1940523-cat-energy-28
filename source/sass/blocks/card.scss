@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding: 9px 0 23px;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: -20px;
