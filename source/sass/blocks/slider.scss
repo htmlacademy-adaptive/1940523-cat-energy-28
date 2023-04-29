@@ -25,22 +25,38 @@
   }
 
   &--before {
-    background-image: url("../img/mobile/cat-before-mobile_2.png");
+    background-image: url("../img/mobile/cat-before-mobile.png");
     background-position: -18% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/cat-before-mobile@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/cat-before-tablet.png");
       background-position: -2% 50%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tablet/cat-before-tablet@2x.png");
+      }
     }
   }
 
   &--after {
-    background-image: url("../img/mobile/cat-after-mobile_2.png");
+    background-image: url("../img/mobile/cat-after-mobile.png");
     background-position: 126% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/cat-after-mobile@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/cat-after-tablet.png");
       background-position: 110% 50%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tablet/cat-after-tablet@2x.png");
+      }
     }
   }
 }
