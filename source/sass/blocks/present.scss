@@ -2,10 +2,14 @@
   padding: 59px 60px 10px;
   min-height: 289px;
   background-color: $accent-color;
-  background-image: url("../img/green-bg.png"), url("../img/present-cat.jpg");
+  background-image: url("../img/rectangle.png"), url("../img/mobile/present-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rectangle@2x.png"), url("../img/mobile/present-cat-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
@@ -13,6 +17,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 59px 126px 62px 78px;
+    background-image: url("../img/rectangle.png"), url("../img/tablet/present-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rectangle@2x.png"), url("../img/tablet/present-cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +29,11 @@
     max-width: 250px;
     margin-top: 0;
     padding: 55px 43px 42px 40px;
+    background-image: url("../img/rectangle.png"), url("../img/present-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rectangle@2x.png"), url("../img/present-cat-desktop@2x.jpg");
+    }
   }
 }
 
