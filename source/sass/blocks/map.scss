@@ -1,7 +1,37 @@
 .map {
   width: 100%;
   position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../img/mobile/map-icon.png");
+    position: absolute;
+    margin: auto;
+    width: 57px;
+    height: 53px;
+    top: 45%;
+    left: 51%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/map-icon@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 49%;
+      left: 51%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 46%;
+      left: 67%;
+    }
+  }
 }
+
 
 .map__iframe {
   width: 100%;
@@ -12,5 +42,19 @@
 @media (min-width: 768px) {
   .map__iframe {
     height: 400px;
+  }
+
+  .map {
+    &::after {
+      background-image: url("../img/tablet/map-icon-tablet.png");
+      width: 113px;
+      height: 106px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map::after {
+      background-image: url("../img/tablet/map-icon-tablet@2x.png");
+    }
   }
 }

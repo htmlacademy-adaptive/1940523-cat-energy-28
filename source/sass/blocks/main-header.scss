@@ -3,18 +3,34 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       width: 100%;
+      z-index: 2;
     }
   }
 }
 
 .main-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px 17px;
+  padding: 6px 9px 13px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    height: 1px;
+    width: 320px;
+    background-color: $card-border-color;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 2px 30px 30px;
+    padding: 0 30px 30px;
     align-items: center;
+
+    &::after {
+      content: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -23,5 +39,5 @@
 }
 
 .main-header__logo {
-  max-width: 64%;
+  max-width: 70%;
 }

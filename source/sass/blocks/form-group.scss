@@ -17,7 +17,7 @@
 
   &--radio {
     @media (min-width: $tablet-width) {
-      padding: 25px 27px 16px;
+      padding: 22px 0 12px 24px;
       border: 1px solid $form-border-color;
     }
 
@@ -27,31 +27,25 @@
   }
 
   &--additional {
+    padding-bottom: 15px;
+
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 54px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 74px;
     }
   }
 }
 
 .form-group__item {
-  &--additional {
-    @media (min-width: $tablet-width) {
-      width: 50%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 25%;
-    }
-  }
-
   &--owner {
     @media (min-width: $desktop-width) {
-      width: 46%;
+      width: 47%;
     }
   }
 }

@@ -10,6 +10,15 @@
   background-color: $accent-color;
   border: none;
 
+  &:hover {
+    background-color: $buttonHoverColor;
+  }
+
+  &:active {
+    background-color: $buttonHoverColor;
+    color: rgba($base-color, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 14px 0;
   }
@@ -19,17 +28,26 @@
     line-height: 20px;
     color: $special-text-color;
     background-color: $basic-grey-color;
+
+    &:hover {
+      background-color: $buttonAddHoverColor;
+    }
+
+    &:active {
+      background-color: $buttonAddHoverColor;
+      color: rgba($special-text-color, 0.3);
+    }
   }
 
   &--submit {
     width: 100%;
-    padding: 8px 0;
+    padding: 9px 0;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
 
     @media (min-width: $tablet-width) {
       width: auto;
-      padding: 20px 67px;
+      padding: 22px 67px;
       font-size: 20px;
       line-height: 10px;
     }

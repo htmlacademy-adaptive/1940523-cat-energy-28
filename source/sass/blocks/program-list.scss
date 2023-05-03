@@ -3,22 +3,20 @@
 }
 
 .program-list__item {
+  position: relative;
   padding: 20px 22px 20px 22px;
-  margin: 0 0 20px 0;
   background-color: $basic-grey-color;
 
-  &:last-child {
-    margin: 11px 0 0 0;
+  &:not(:last-child) {
+    margin: 0 0 23px 0;
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     min-height: 375px;
     padding: 77px 62px 53px 53px;
-    margin: 0 0 30px 0;
 
-    &:last-child {
-      margin: 0 0 30px 0;
+    &:not(:last-child) {
+      margin: 0 0 25px 0;
     }
   }
 
@@ -28,7 +26,7 @@
     padding: 47px 62px 55px 52px;
     margin: 0;
 
-    &:last-child {
+    &:not(:last-child) {
       margin: 0;
     }
   }
@@ -44,22 +42,22 @@
 
   @media (min-width: $desktop-width) {
     justify-content: start;
-    margin: 32px 0 32px 165px;
+    margin: 32px 0 32px 163px;
   }
 }
 
 .program-list__icon-background {
-  position: relative;
-  margin-right: 19px;
+  position: absolute;
+  top: 20px;
+  left: 22px;
   width: 50px;
   height: 50px;
   background-color: $accent-color;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    margin-right: 0;
     top: 25%;
+    left: auto;
     right: 62px;
     width: 200px;
     height: 200px;
@@ -85,20 +83,22 @@
 
   @media (min-width: $tablet-width) {
     left: 30px;
+    top: -13px;
     width: 140px;
     height: 194px;
 
     &--pro {
-      top: 38px;
-      left: -55px;
+      top: 42px;
+      left: -33px;
       width: 268px;
       height: 112px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    left: 15px;
-    width: 70px;
+    left: 11px;
+    top: -4px;
+    width: 79px;
     height: 97px;
 
     &--pro {
@@ -110,29 +110,29 @@
   }
 }
 
-.program-list__title-wrapper {
-  @media (min-width: $desktop-width) {
-    margin: 30px 0 40px 10px;
-  }
-}
-
 .program-list__title {
   @include font-secondary;
   margin: 0;
+  padding: 7px 0 5px 70px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //margin: 30px 0 40px 10px;
   }
 }
 
 .program-list__description {
   margin: 0;
-  padding: 22px 0;
+  padding: 25px 0 22px 0;
   font-size: 14px;
   line-height: 18px;
   color: $special-text-color;
@@ -140,9 +140,9 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 56%;
+    width: 58%;
     padding: 24px 0;
-    margin: 0 0 24px 0;
+    margin: 0 0 17px 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -150,25 +150,64 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 39px 0 8px 0;
+    margin: 0;
+    padding: 39px 0 29px 0;
   }
 }
 
 .program-list__link {
   @include font-secondary;
-  display: block;
-  padding: 15px 47px 0 0;
+  display: flex;
+  padding: 19px 47px 0 0;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: $standard-text-color;
   text-transform: uppercase;
   text-decoration: none;
   text-align: start;
 
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    min-width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../img/icons/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      min-width: 32px;
+      background-image: url("../img/icons/icon-arrow-hover.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 1.8px;
+    word-spacing: 1.4px;
+
+    &::after {
+      margin-left: 27px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
+    letter-spacing: 0;
+    word-spacing: 0;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
+
+    &::after {
+      top: 9px;
+    }
   }
 }
 

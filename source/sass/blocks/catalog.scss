@@ -1,15 +1,15 @@
 .catalog {
-  margin-top: 50px;
+  margin-top: 54px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: 164px;
-    margin-bottom: 61px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 166px;
-    margin-bottom: 68px;
+    margin-top: 164px;
+    margin-bottom: 51px;
   }
 }
 
@@ -20,12 +20,12 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 139px 60px;
+    gap: 137px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 149px 80px;
+    gap: 144px 80px;
   }
 }
 
