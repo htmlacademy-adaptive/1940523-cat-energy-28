@@ -1,4 +1,6 @@
 .main-footer {
+  background-color: $basic-grey-color;
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -12,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 47px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,18 +26,21 @@
   display: block;
   padding-bottom: 20px;
   text-align: center;
+  border-bottom: 1px solid $background-additional-color;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
   }
 }
 
 .main-footer__social {
-  padding: 20px;
+  border-bottom: 1px solid $background-additional-color;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 23px;
     min-width: 135px;
+    border-bottom: none;
   }
 }
 

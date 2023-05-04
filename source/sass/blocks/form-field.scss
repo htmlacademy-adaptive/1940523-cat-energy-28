@@ -19,6 +19,18 @@
       margin-bottom: 13px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+
+    &--radio {
+      margin-bottom: 12px;
+    }
+
+    &--owner {
+      margin-bottom: 13px;
+    }
+  }
 }
 
 .form-field__label {
@@ -76,6 +88,8 @@
 
     @media (min-width: $tablet-width) {
       min-height: 175px;
+      padding: 8px 20px 12px;
+      letter-spacing: 0.1px;
     }
   }
 
@@ -87,13 +101,28 @@
 
   &--phone {
     padding: 14px 12px 13px 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+      padding: 16px 12px 9px 19px;
+    }
   }
 
   &--email {
     padding: 14px 12px 13px 15px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 24px;
+      margin-left: 26px;
+      padding: 16px 12px 9px 19px;
+    }
+  }
+
+  &--error {
+    outline: 2px solid $form-border-error-color;
+    box-shadow: unset;
+
+    & + .form-field__control-icon {
+      color: $form-border-error-color;
     }
   }
 
@@ -101,6 +130,23 @@
     @include font-secondary;
     text-transform: uppercase;
   }
+}
+
+.form-field__control:hover {
+  border: 1px solid $form-border-hover-color;
+}
+
+.form-field__control:focus {
+  outline: 2px solid $form-border-focus-color;
+
+  & + .form-field__control-icon {
+    color: $accent-color;
+  }
+}
+
+.form-field__control:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .form-field__control-icon {
@@ -112,6 +158,10 @@
   height: 20px;
 
   @media (min-width: $tablet-width) {
+    right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
     right: 20px;
   }
 }
@@ -130,8 +180,16 @@
     height: 39px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 1px 22px 0 1px;
+  }
+
   &--radio {
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      margin: 2px 21px 0 4px;
+    }
   }
 }
 
@@ -170,7 +228,7 @@
   @media (min-width: $tablet-width) {
     width: 26px;
     height: 26px;
-    top: 8px;
-    left: 8px;
+    top: 5px;
+    left: 6px;
   }
 }

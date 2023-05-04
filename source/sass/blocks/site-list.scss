@@ -14,6 +14,7 @@
 .site-list--main .site-list__item--current::after {
   @media (min-width: $desktop-width) {
     background-color: $base-color;
+    bottom: -6px;
   }
 }
 
@@ -33,6 +34,14 @@
     line-height: 24px;
     font-weight: 400;
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +56,7 @@
       @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
-        bottom: -15px;
+        bottom: -10px;
         width: 100%;
         height: 2px;
         background-color: $accent-color;

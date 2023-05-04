@@ -1,3 +1,11 @@
+.slider {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  }
+}
+
 .slider__items {
   height: 100%;
   display: flex;
@@ -26,25 +34,37 @@
 
   &--before {
     background-image: url("../img/mobile/cat-before-mobile.png");
-    background-position: -18% 50%;
+    background-position-x: -18%;
+    background-position-y: 3px;
+    background-size: initial;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/cat-before-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -129px;
+      left: 118px;
       background-image: url("../img/tablet/cat-before-tablet.png");
-      background-position: -2% 50%;
+      background-position: 5% 50%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-before-tablet@2x.png");
       }
     }
+
+    @media (min-width: $desktop-width) {
+      top: -110px;
+      left: 33px;
+    }
   }
 
   &--after {
     background-image: url("../img/mobile/cat-after-mobile.png");
-    background-position: 126% 50%;
+    background-position-x: 116%;
+    background-position-y: 3px;
+    background-size: initial;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/cat-after-mobile@2x.png");
@@ -52,31 +72,64 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/cat-after-tablet.png");
-      background-position: 110% 50%;
+      background-position: 99% 8%;
+      position: absolute;
+      top: -149px;
+      right: 108px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-after-tablet@2x.png");
       }
     }
+
+    @media (min-width: $desktop-width) {
+      top: -129px;
+      right: -14px;
+      background-position: 97% 8%;
+    }
   }
 }
 
-.slider__toggle {
+.slider__button {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: calc(50% - 20px);
+  color: $additional-grey-color;
+  cursor: pointer;
+  border: none;
 
-  &::before {
-    content: url("../img/mobile/curtain.png");
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    right: -15px;
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $background-active-color;
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      content: url("../img/tablet/curtain.png");
-    }
+    top: -154px;
+    left: calc(50% - 19px);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: auto;
+    top: -135px;
+    right: 239px;
+  }
+}
+
+.slider__button-icon {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__button-icon-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

@@ -1,9 +1,16 @@
 .about {
-  margin-top: 26px;
+  margin-top: 22px;
   padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-top: 43px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 73px;
+    margin-bottom: 8px;
   }
 }
 
@@ -13,7 +20,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -23,7 +30,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 37px 150px;
+    grid-gap: 39px 59px;
     counter-set: item;
   }
 
@@ -43,11 +50,12 @@
     flex-direction: column;
     align-items: start;
 
-    &::before {
+    &::after {
       @include font-secondary;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 24%;
+      width: 130px;
       z-index: -1;
       counter-increment: item;
       content: counter(item);
@@ -59,6 +67,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 40px 0 40px 0;
+
+    &::after {
+      width: 70px;
+    }
   }
 }
 
@@ -108,7 +120,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 30px 0 0 0;
+    padding: 30px 75px 0 0;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0 0;
   }
 }
