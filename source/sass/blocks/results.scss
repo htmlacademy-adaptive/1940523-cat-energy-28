@@ -211,11 +211,11 @@
 }
 
 .results__image {
-  height: 261px;
+  height: 264px;
   padding: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    height: 459px;
+    height: 560px;
     padding: 0;
   }
 
@@ -231,7 +231,7 @@
 
 .results__wrapper {
   @media (min-width: $tablet-width) {
-    padding-bottom: 229px;
+    padding-bottom: 130px;
   }
 
   @media (min-width: $desktop-width) {
