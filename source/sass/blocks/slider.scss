@@ -12,7 +12,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    background-color: $background-color;
+    background: linear-gradient(to bottom, transparent 0 18%, $background-color 18% 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -28,8 +28,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    height: 102%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 270px;
+    height: 91%;
   }
 
   &--before {
@@ -40,22 +45,28 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/cat-before-mobile@2x.png");
+      background-position-x: -18%;
+      background-position-y: 5px;
+      background-size: cover;
     }
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: -129px;
+      top: -53px;
       left: 118px;
       background-image: url("../img/tablet/cat-before-tablet.png");
       background-position: 5% 50%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-before-tablet@2x.png");
+        top: -54px;
+        left: 117px;
+        background-position: 4% 50%;
       }
     }
 
     @media (min-width: $desktop-width) {
-      top: -110px;
+      top: -133px;
       left: 33px;
     }
   }
@@ -68,22 +79,27 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/mobile/cat-after-mobile@2x.png");
+      background-position-x: 118%;
+      background-position-y: 4px;
+      background-size: cover;
     }
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/tablet/cat-after-tablet.png");
       background-position: 99% 8%;
       position: absolute;
-      top: -149px;
+      top: -57px;
       right: 108px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-after-tablet@2x.png");
+        top: -53px;
+        right: 109px;
       }
     }
 
     @media (min-width: $desktop-width) {
-      top: -129px;
+      top: -135px;
       right: -14px;
       background-position: 97% 8%;
     }
@@ -109,8 +125,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -154px;
-    left: calc(50% - 19px);
+    top: -55px;
+    left: calc(50% - 18px);
   }
 
   @media (min-width: $desktop-width) {
