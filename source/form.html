@@ -59,21 +59,22 @@
     <div class="form__header form__container">
       <h2 class="form__title title title--h1">Подбор программы</h2>
       <p class="form__subtitle">Заполните анкету, и мы подберем<br>
-        программу питания для вашего кота</p>
+        программу питания для вашего кота
+      </p>
     </div>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__wrapper">
         <div class="form__group form__group--base">
           <label class="form__field form-field">
-            <span class="form-field__label">ИМЯ:*</span>
+            <span class="form-field__label form-field__label--owner">ИМЯ:*</span>
             <input class="form-field__control" type="text" id="name" placeholder="барсик" required>
           </label>
           <label class="form__field form-field">
-            <span class="form-field__label">Вес (кг):*</span>
+            <span class="form-field__label form-field__label--owner">Вес (кг):*</span>
             <input class="form-field__control" type="number" id="weight" placeholder="7" required>
           </label>
           <label class="form__field form-field">
-            <span class="form-field__label">Возраст (лет):</span>
+            <span class="form-field__label form-field__label--owner">Возраст (лет):</span>
             <input class="form-field__control" type="number" id="age" placeholder="7">
           </label>
         </div>
@@ -81,23 +82,23 @@
           <ul class="form-group__list form-group__list--radio">
             <li class="form-group__item">
               <label class="form__field form-field form-field--radio">
-                <input class="form-field__control form-field__control--radio visually-hidden" type="radio" name="program-type" value="slim" checked>
+                <input class="form-field__control visually-hidden" type="radio" name="program-type" value="slim" checked>
                 <span class="form-field__input-mark form-field__input-mark--radio"></span>
-                <span class="form-field__label form-field__label--additional-color">похудение</span>
+                <span class="form-field__label form-field__label--radio form-field__label--additional-color">похудение</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field form-field--radio">
-                <input class="form-field__control form-field__control--radio visually-hidden" type="radio" name="program-type" value="pro">
+                <input class="form-field__control visually-hidden" type="radio" name="program-type" value="pro">
                 <span class="form-field__input-mark form-field__input-mark--radio"></span>
-                <span class="form-field__label form-field__label--additional-color">Набор массы</span>
+                <span class="form-field__label form-field__label--radio form-field__label--additional-color">Набор массы</span>
               </label>
             </li>
             <li class="form-group__item">
               <label class="form__field form-field form-field--radio">
-                <input class="form-field__control form-field__control--radio visually-hidden" type="radio" name="program-type" value="help">
+                <input class="form-field__control form-field__control visually-hidden" type="radio" name="program-type" value="help">
                 <span class="form-field__input-mark form-field__input-mark--radio"></span>
-                <span class="form-field__label form-field__label--additional-color">Не знаю (Нужен ваш совет)</span>
+                <span class="form-field__label form-field__label--radio form-field__label--additional-color">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -109,11 +110,11 @@
             <span class="form__group-title title title--h3">Контактные данные (владельца кота)</span>
           </div>
         </div>
-        <div class="form__container">
+        <div class="form__container form-group">
           <ul class="form-group__list form-group__list--owner">
             <li class="form-group__item form-group__item--owner">
               <label class="form__field form-field form-field--owner">
-                <span class="form-field__label">E-mail:*</span>
+                <span class="form-field__label form-field__label--contact">E-mail:*</span>
                 <input class="form-field__control form-field__control--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form-field__control-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <use href="img/sprite.svg#mail-icon"></use>
@@ -122,7 +123,7 @@
             </li>
             <li class="form-group__item form-group__item--owner">
               <label class="form__field form-field form-field--owner">
-                <span class="form-field__label">Телефон:*</span>
+                <span class="form-field__label form-field__label--contact">Телефон:*</span>
                 <input class="form-field__control form-field__control--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form-field__control-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <use href="img/sprite.svg#phone-icon"></use>
@@ -151,39 +152,38 @@
             <span class="form__group-title title title--h3">Дополнительно</span>
           </div>
         </div>
-        <div class="form__container">
+        <div class="form__container form-group">
           <ul class="form-group__list form-group__list--additional">
             <li class="form-group__item form-group__item--additional">
               <label class="form__field form-field">
-                <input class="form-field__control form-field__control--checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
-                <span class="form-field__input-mark"></span>
-                <span class="form-field__label form-field__label--base-color">сахарозаменитель</span>
+                <input class="form-field__control visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+                <span class="form-field__input-mark form-field__input-mark--checkbox"></span>
+                <span class="form-field__label form-field__label--checkbox form-field__label--base-color">сахарозаменитель</span>
               </label>
             </li>
             <li class="form-group__item form-group__item--additional">
               <label class="form__field form-field">
-                <input class="form-field__control form-field__control--checkbox visually-hidden" type="checkbox" name="additional" value="water">
-                <span class="form-field__input-mark"></span>
-                <span class="form-field__label form-field__label--base-color">питьевая вода</span>
+                <input class="form-field__control visually-hidden" type="checkbox" name="additional" value="water">
+                <span class="form-field__input-mark form-field__input-mark--checkbox"></span>
+                <span class="form-field__label form-field__label--checkbox form-field__label--base-color">питьевая вода</span>
               </label>
             </li>
             <li class="form-group__item form-group__item--additional">
               <label class="form__field form-field">
-                <input class="form-field__control form-field__control--checkbox visually-hidden" type="checkbox" name="additional" value="milk">
-                <span class="form-field__input-mark"></span>
-                <span class="form-field__label form-field__label--base-color">молоко</span>
+                <input class="form-field__control visually-hidden" type="checkbox" name="additional" value="milk">
+                <span class="form-field__input-mark form-field__input-mark--checkbox"></span>
+                <span class="form-field__label form-field__label--checkbox form-field__label--base-color">молоко</span>
               </label>
             </li>
             <li class="form-group__item form-group__item--additional">
               <label class="form__field form-field">
-                <input class="form-field__control form-field__control--checkbox visually-hidden" type="checkbox" name="additional" value="vitamins">
-                <span class="form-field__input-mark"></span>
-                <span class="form-field__label form-field__label--base-color">витамины</span>
+                <input class="form-field__control visually-hidden" type="checkbox" name="additional" value="vitamins">
+                <span class="form-field__input-mark form-field__input-mark--checkbox"></span>
+                <span class="form-field__label form-field__label--checkbox form-field__label--base-color">витамины</span>
               </label>
             </li>
           </ul>
         </div>
-
       </div>
       <div class="form__submit-container form__container">
         <button class="form__button button button--submit" type="submit">отправить заявку</button>

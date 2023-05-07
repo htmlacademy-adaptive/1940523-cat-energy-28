@@ -42,6 +42,10 @@
     &:active {
       opacity: 0.3;
     }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
