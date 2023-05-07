@@ -38,8 +38,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 40px;
-    background-color: $basic-grey-color;
-    border: none;
+    background: linear-gradient(to bottom, transparent 0 81px, $basic-grey-color 81px 100%);    border: none;
 
     &::after {
       content: none;
@@ -54,12 +53,14 @@
     }
 
     &--more {
+      margin-top: 81px;
       background: none;
       border: 2px solid $basic-grey-color;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     padding-bottom: 38px;
   }
 }
@@ -71,12 +72,12 @@
   @media (min-width: $tablet-width) {
     position: relative;
     flex-direction: column;
-    padding: 155px 36px 25px;
+    padding: 235px 36px 25px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 155px 36px 24px 40px;
+    padding: 244px 36px 24px 40px;
   }
 
   &--more {
@@ -88,7 +89,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 138px;
+      padding-top: 156px;
     }
   }
 }
@@ -129,28 +130,28 @@
 .card__image {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -16%;
+    top: 28px;
     left: calc(50% - 80px);
     width: 163px;
     height: 174px;
     object-fit: contain;
 
     &--big-size {
-      top: -23%;
+      top: 0;
       left: calc(50% - 88px);
-      width: 168px;
+      width: 173px;
       height: 200px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    top: -18%;
+    top: 26px;
     left: calc(50% - 80px);
     width: 161px;
     height: 172px;
 
     &--big-size {
-      top: -26%;
+      top: 0;
       left: calc(50% - 86px);
       width: 176px;
       height: 196px;
@@ -189,7 +190,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 9%;
+      top: 47px;
     }
   }
 }

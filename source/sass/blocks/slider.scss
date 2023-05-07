@@ -53,21 +53,20 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       top: -53px;
-      left: 118px;
+      right: calc(50% - 5px);
       background-image: url("../img/tablet/cat-before-tablet.png");
       background-position: 5% 50%;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-before-tablet@2x.png");
         top: -54px;
-        left: 117px;
         background-position: 4% 50%;
       }
     }
 
     @media (min-width: $desktop-width) {
       top: -133px;
-      left: 33px;
+      right: calc(50% - 25px);
     }
   }
 
@@ -88,19 +87,18 @@
       background-image: url("../img/tablet/cat-after-tablet.png");
       background-position: 99% 8%;
       position: absolute;
-      top: -57px;
-      right: 108px;
+      top: -55px;
+      left: calc(50% + 7px);
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/tablet/cat-after-tablet@2x.png");
         top: -53px;
-        right: 109px;
       }
     }
 
     @media (min-width: $desktop-width) {
       top: -135px;
-      right: -14px;
+      left: calc(50% + 20px);
       background-position: 97% 8%;
     }
   }
