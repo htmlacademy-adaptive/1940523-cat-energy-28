@@ -193,22 +193,26 @@
     text-align: end;
     margin: 30px 0 0 0;
 
-    &--price {
-      display: block;
-      padding-top: 10px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     min-width: 328px;
-
-    &--price {
-      padding-top: 0;
-    }
   }
 }
+
+.results__price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
 
 .results__image {
   height: 264px;
