@@ -1,60 +1,59 @@
 .map {
-  width: 100%;
   position: relative;
+  width: 100%;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    background-image: url("../img/mobile/map-icon.png");
-    position: absolute;
-    margin: auto;
-    width: 57px;
-    height: 53px;
-    top: 45%;
-    left: 51%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    background-size: contain;
+.map__image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 362px;
+  bottom: 0;
+  left: 0;
+  background-color: $basic-grey-color;
+  object-fit: cover;
+  z-index: 1;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/map-icon@2x.png");
-    }
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+  }
 
-    @media (min-width: $tablet-width) {
-      top: 49%;
-      left: 51%;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 46%;
-      left: 67%;
-    }
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    max-height: none;
+    top: 0;
+    bottom: unset;
   }
 }
 
-
 .map__iframe {
+  position: relative;
+  display: block;
   width: 100%;
   height: 362px;
   border: none;
-}
+  z-index: 2;
 
-@media (min-width: 768px) {
-  .map__iframe {
+  @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
 
-  .map {
-    &::after {
-      background-image: url("../img/tablet/map-icon-tablet.png");
-      width: 113px;
-      height: 106px;
-    }
+.map__icon {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 25px);
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: calc(50% - 56px);
+    left: calc(50% - 50px);
   }
 
-  @media (min-resolution: 2dppx) {
-    .map::after {
-      background-image: url("../img/tablet/map-icon-tablet@2x.png");
-    }
+  @media (min-width: $desktop-width) {
+    top: calc(45% - 49px);
+    left: calc(67% - 55px);
   }
 }

@@ -53,7 +53,7 @@
     </div>
   </div>
 </header>
-<main class="main-container">
+<main class="main-container main-container--nojs">
   <div class="main-container__title-wrapper container">
     <h1 class="main-container__title title title--h1">Каталог продукции</h1>
   </div>
@@ -384,6 +384,14 @@
   <section class="map">
     <div class="map__wrapper">
       <h2 class="map__title visually-hidden">Мы на карте</h2>
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop-2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet-2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile-2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop-2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet-2x.jpg 2x">
+        <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile-2x.jpg 2x" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+      </picture>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1160726408207!2d30.317857323536607!3d59.939475593588824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681412831212!5m2!1sru!2sru"
         width="1440"
@@ -394,6 +402,12 @@
         title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
         class="map__iframe">
       </iframe>
+      <picture>
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/icons/map-tablet.webp 1x, img/icons/map-tablet-2x.webp 2x">
+        <source type="image/webp" srcset="img/icons/map-mobile.webp 1x, img/icons/map-mobile-2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/icons/map-tablet.png 1x, img/icons/map-tablet-2x.png 2x">
+        <img class="map__icon" src="img/icons/map-mobile.png" srcset="img/icons/map-mobile-2x.png 2x" width="57" height="53" alt="Указатель на карте.">
+      </picture>
     </div>
   </section>
   <div class="main-footer__wrapper container">
