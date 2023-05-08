@@ -1,6 +1,8 @@
 const mainMenu = document.querySelector('.main-nav__wrapper');
 const menuButton = document.querySelector('.main-nav__toggle');
+const mainContainer = document.querySelector('.main-container');
 
+mainContainer.classList.remove('main-container--nojs');
 mainMenu.classList.remove('main-nav__wrapper--nojs');
 mainMenu.classList.add('main-nav__wrapper--closed');
 menuButton.classList.remove('main-nav__toggle--nojs');
